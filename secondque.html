@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+	
+<head> 
+	<title> 
+		How to dynamically set the height of 
+		a div element using jQuery? 
+	</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> 
+	</script> 
+<link rel="stylesheet" type="text/css" href="que2-mystyle.css">
+</head> 
+	
+<body> 
+	
+ <div class="container-fluid">
+ 	<nav class="navbar ">
+ 		<h3 class="title">SIG<span class="expression">{<span class="bracket">(.)</span>}</span>TUPLE</h3>
+ 	</nav>
+ 	<div class="container">
+ 	<div class="col-md-6 col-lg-6 col-sm-6">
+ 	<div class="form-wrapper">
+ 		<h3 class="heading">Input</h3>
+  <form>
+  	
+    <label for="height">height</label>
+    <input type="number" value="1" class="geeks1">
+
+
+    <label for="width">width</label>
+    <input type="number" class="geeks3">
+
+     <label for="top">x co-ordinate</label>
+    <input type="number" class="geeks4">
+
+     <label for="left">y-co-ordinate</label>
+     <input type="number" class="geeks5">
+    <input type="button" class="geeks2">
+  </form>
+  </div>
+  </div>
+<div class="diagram col-lg-6 col-md-6 col-sm-6 ">
+	<div class="diagram-div">
+		<h3 class="heading-diagram">preview</h3>
+	    <div class="relative">
+		<div id="div1" class="box"> 
+		</div> 
+		</div>
+</div>
+</div>
+</div>
+</div>
+	</body>
+	<script> 
+		$(document).ready(function(){ 
+			$(".geeks2").click(function(){ 
+				
+				
+				
+				var newHeight = $(".geeks1").val(); 
+				$(".box").height(newHeight); 
+
+				var newWidth = $(".geeks3").val(); 
+				$(".box").width(newWidth); 
+
+				var newTop = $(".geeks4").val(); 
+				$(".box").position.top(newTop); 
+				var newLeft = $(".geeks5").val(); 
+				$(".box").left(newLeft); 
+				
+				demo = "New-height: "+ 
+						$("#div1").height(); 
+						+ "px"; 
+				$("#p1").text(demo); 
+
+				demo1 = "New-width: "+ 
+						$("#div1").width(); 
+						+ "px"; 
+				$("#p2").text(demo1); 
+				demo2 = "New-Top: "+ 
+						$("#div1").position.top(); 
+						+ "px"; 
+				$("#p3").text(demo2);
+				demo3 = "New-left: "+ 
+						$("#div1").left(); 
+						+ "px"; 
+				$("#p4").text(demo3);
+			}); 
+		}); 
+	</script> 
+</body> 
+	
+</html>

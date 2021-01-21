@@ -1,0 +1,95 @@
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+		#div1 { 
+			height: 50px; 
+			width: 300px; 
+			border: 1px solid #d3d3d3; 
+			background-color: #ffffff;
+		} 
+	
+		h1 { 
+			color: green; 
+		} 
+		.box{ 
+ 
+			border: 1px solid #ccc; 
+			color: white; 
+			position: absolute;
+            
+		} 
+		.relative{
+			position: relative;
+          width: 100%;
+          min-height: 400px;
+          background-color: white;
+          border: 1px solid #d3d3d3;
+		}
+		.diagram{
+			min-height: 400px;
+		}
+		.form-wrapper{
+			padding: 20px;
+    background-color: white;
+		}
+		.diagram-div{
+			padding: 30px 50px;
+    background-color: white;
+		}
+		.heading, .heading-diagram{
+			color:#d91e39f0;
+			padding-bottom: 20px;
+		}
+		.navbar{
+			background-color: #a94442;
+			/*padding: 2px 75px;*/
+		}
+		.title{
+			color:#f5f5f5;
+			font-weight: bold;
+			padding-left: 73px;
+            padding-bottom: 20px;
+		}
+		.expression{
+			font-size: 60px;
+			font-stretch: condensed;
+		}
+		.bracket{
+			font-size: 40px;
+		}
+		@media (min-width: 1440px) {
+			.title {
+               color: #f5f5f5;
+               font-weight: bold;
+               padding-left: 144px;
+              padding-bottom: 20px;
+          }
+}
